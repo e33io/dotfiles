@@ -1,0 +1,33 @@
+/*******************************************************
+ * Rofi Floating-Yaru-Dark-Orange Theme
+ ******************************************************/
+
+/* theme settings */
+@import "~/.config/rofi/themes/floating-window-settings.rasi"
+
+/* theme colors */
+* {
+    selected-normal-foreground:  #ffffff;
+    foreground:                  #eeeeee;
+    normal-foreground:           #eeeeee;
+    alternate-normal-background: #272727;
+    selected-urgent-foreground:  #ffffff;
+    urgent-foreground:           #ed2f37;
+    alternate-urgent-background: #272727;
+    active-foreground:           #eeeeee;
+    selected-active-foreground:  #ffffff;
+    alternate-active-background: #272727;
+    background:                  #202020;
+    alternate-normal-foreground: #eeeeee;
+    normal-background:           #202020;
+    selected-normal-background:  #e95420;
+    border-color:                #ee7c52;
+    separatorcolor:              #434343;
+    urgent-background:           #202020;
+    selected-urgent-background:  #a60e15;
+    alternate-urgent-foreground: #ed2f37;
+    background-color:            #202020;
+    alternate-active-foreground: #eeeeee;
+    active-background:           #202020;
+    selected-active-background:  #e95420;
+}

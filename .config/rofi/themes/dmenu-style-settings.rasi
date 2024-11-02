@@ -1,0 +1,63 @@
+/******************************************************************
+ * Rofi dmenu-style-settings
+ *****************************************************************/
+
+configuration {
+    drun-match-fields: "name,generic,exec";
+    drun-display-format: "{name}";
+    disable-history: true;
+    window-format: "[ws{w}] {n}";
+    show-icons: true;
+}
+window {
+    anchor:   north;
+    location: north;
+    width:    100%;
+    padding:  0 0.1em;
+    children: [ horibox ];
+}
+/* entry without prompt text or colon */
+horibox {
+    orientation: horizontal;
+    children:    [ entry, listview ];
+}
+/* entry with prompt text or colon
+horibox {
+    orientation: horizontal;
+    children:    [ prompt, textbox-prompt-colon, entry, listview ];
+}
+prompt {
+    padding: 0.17em 0 0.17em 0.1em;
+}
+textbox-prompt-colon {                                                
+    text-color: inherit;                                              
+    expand:     false;                                                    
+    margin:     0.2em 0 0 0;                                          
+    str:        ":";
+}
+*/
+entry {
+    expand:  false;
+    width:   24ch;
+    padding: 0.17em 0.2em;
+}
+listview {
+    layout:  horizontal;
+    spacing: 0.6em;
+}
+element {
+    padding: 0 0.1em;
+}
+element selected {
+    background-color: @selected-background;
+    text-color:       @selected-text-color;
+}
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+    padding:          0.17em 0.2em;
+}
+element-icon {
+    background-color: inherit;
+    size:             1em;
+}

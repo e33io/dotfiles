@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>edit-copy</icon>
+	<name>Copy Current Path</name>
+	<submenu></submenu>
+	<unique-id>1671575181393342-1</unique-id>
+	<command>echo -n %f | xclip -selection clipboard</command>
+	<description>Copy path to current file or directory</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+</actions>

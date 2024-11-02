@@ -1,0 +1,26 @@
+# cmus static configuration file
+#
+# This file is read immediately after the `~/cmus/autosave file`, and is never
+# modified by cmus - you can override auto-saved settings in this file - this
+# file is not limited to options; it can contain other commands too
+
+# audio options
+set aaa_mode=all
+set follow=true
+set play_library=true
+set play_sorted=false
+set shuffle=tracks
+
+# color options
+set color_separator=240
+set color_titleline_bg=240
+set color_titleline_fg=254
+set color_win_cur_sel_bg=242
+set color_win_inactive_cur_sel_fg=black
+set color_win_sel_bg=242
+set color_win_sel_fg=255
+set color_win_title_bg=240
+set color_win_title_fg=254
+
+# run status display script
+set status_display_program=cmus-notify.sh

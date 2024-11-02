@@ -1,0 +1,14 @@
+/*********************************************
+ * Rofi Dmenu-Adwaita-Light Theme
+ ********************************************/
+
+/* theme settings */
+@import "~/.config/rofi/themes/dmenu-style-settings.rasi"
+
+/* theme colors */
+* {
+    background-color:    #f6f5f4;
+    selected-background: #3584e4;
+    text-color:          #2e3436;
+    selected-text-color: #ffffff;
+}

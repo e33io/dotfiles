@@ -1,0 +1,14 @@
+/*********************************************
+ * Rofi Dmenu-Black-Mono Theme
+ ********************************************/
+
+/* theme settings */
+@import "~/.config/rofi/themes/dmenu-style-settings.rasi"
+
+/* theme colors */
+* {
+    background-color:    #0e0e0e;
+    selected-background: #ffffff;
+    text-color:          #ffffff;
+    selected-text-color: #0e0e0e;
+}

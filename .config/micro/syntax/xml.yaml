@@ -1,0 +1,58 @@
+filetype: xml
+
+detect:
+    filename: "\\.(xml|sgml?|rng|svg|plist)$"
+    header: "<\\?xml.*\\?>"
+
+rules:
+    # doctype
+    - preproc:
+        start: "<!DOCTYPE"
+        end: "[/]?>"
+        rules: []
+
+    # brackets, punctuation and symbols
+    - statement: "[\\[\\](){}@&/.,:;*=_\\-\\+]"
+
+    # comments
+    - comment:
+        start: "<!--"
+        end: "-->"
+        rules: []
+
+    # between tags
+    - identifier: "[\\<a-zA-Z0-9#]"
+
+    # tag options
+    - symbol.tag:
+        start: "<\\??"
+        end: "\\??>"
+        rules:
+            - type:
+                start: "[[:space:]]"
+                end: "="
+                rules: []
+            - constant.string:
+                start: "\""
+                end: "\""
+                skip: "\\\\."
+                rules:
+                    - constant.specialChar: "\\\\."
+            - constant.string:
+                start: "'"
+                end: "'"
+                skip: "\\\\."
+                rules:
+                    - constant.specialChar: "\\\\."
+
+    # quoted strings
+    - constant.string:
+        start: "\""
+        skip: "\\\\."
+        end: "\""
+        rules: []
+    - constant.string:
+        start: "'"
+        skip: "\\\\."
+        end: "'"
+        rules: []

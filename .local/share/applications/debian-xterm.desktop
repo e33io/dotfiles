@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=XTerm
+GenericName=Terminal
+Comment=Use the command line
+Exec=xterm
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Icon=xterm
+Categories=System;TerminalEmulator;
+StartupWMClass=XTerm
+NoDisplay=false

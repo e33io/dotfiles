@@ -1,0 +1,18 @@
+filetype: xresources
+
+detect: 
+    filename: "X(defaults|resources)$"
+
+rules:
+    # configuration fields
+    - identifier: "^[a-zA-Z0-9_\\-\\.\\*]*\\:[[:space:]]"
+    # numbers
+    - constant: "\\b[0-9]+\\b|\\b[0-9]+x[0-9]+\\b"
+    # boolean values
+    - identifier.var: "\\b(true|false)\\b"
+    # punctuation and symbols
+    - statement: "[*:=\\.\\-]"
+    # comments
+    - comment: "(^|[[:space:]])!([^{].*)?$"
+    # HEX colors
+    - type: "#[A-Fa-f0-9]{6}"

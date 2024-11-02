@@ -1,0 +1,18 @@
+/*********************************************
+ * Rofi Panel-Adwaita-Light Theme
+ ********************************************/
+
+/* theme settings */
+@import "~/.config/rofi/themes/panel-style-settings.rasi"
+
+/* theme colors and entry font */
+* {
+    background-color:    #f6f5f4;
+    selected-background: #3584e4;
+    text-color:          #2e3436;
+    selected-text-color: #ffffff;
+    border-color:        #1d72d8;
+    dim-text:            rgba(0,0,0,0.25);
+    dim-border:          rgba(0,0,0,0.5);
+    entry-font:          "sans-serif 10";
+}

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=NMTUI Connect
+GenericName=Network Manager
+Comment=TUI Network Manager
+Icon=preferences-system-network-symbolic
+Exec=nmtui-connect
+Terminal=true
+Categories=System;ConsoleOnly;
+Keywords=system;

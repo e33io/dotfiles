@@ -1,0 +1,14 @@
+/*********************************************
+ * Rofi Dmenu-Mint-L-Dark-Teal Theme
+ ********************************************/
+
+/* theme settings */
+@import "~/.config/rofi/themes/dmenu-style-settings.rasi"
+
+/* theme colors */
+* {
+    background-color:    #1e1e1e;
+    selected-background: #579c8e;
+    text-color:          #eeeeee;
+    selected-text-color: #ffffff;
+}

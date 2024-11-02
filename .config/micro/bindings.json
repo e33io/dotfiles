@@ -1,0 +1,10 @@
+{
+    "Alt-/": "lua:comment.comment",
+    "CtrlUnderscore": "lua:comment.comment",
+    "Alt-\\": "command:tree",
+    "Alt-q": "lua:initlua.quitAllOther",
+    "Alt-o": "command:fzf",
+    "Alt-u": "command:upper",
+    "Alt-l": "command:lower",
+    "Alt-t": "command:title"
+}
