@@ -1,5 +1,5 @@
 # X Colors - Micro editor theme
-# URL: https://git.sr.ht/~e33io/dotfiles/tree/main/item/.config/micro/colorschemes/x-colors.micro
+# URL: https://github.com/e33io/dotfiles/blob/main/.config/micro/colorschemes/x-colors.micro
 
 color-link color-column        "black"
 color-link comment             "italic 241"

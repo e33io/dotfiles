@@ -2,7 +2,7 @@
 
 <!--
 Monokai Mod Light - text editor theme
-URL: https://git.sr.ht/~e33io/dotfiles/tree/main/item/usr/share/gtksourceview-4/styles/monokai-mod-light.xml
+URL: https://github.com/e33io/dotfiles/blob/main/usr/share/gtksourceview-4/styles/monokai-mod-light.xml
 -->
 
 <style-scheme id="monokai-mod-light" _name="Monokai Mod Light" version="1.0">

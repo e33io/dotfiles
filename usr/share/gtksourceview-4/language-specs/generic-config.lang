@@ -2,7 +2,7 @@
 
 <!--
 Generic Config - highlighting for files not supported by other syntax plugins
-URL: https://git.sr.ht/~e33io/dotfiles/tree/main/item/usr/share/gtksourceview-4/language-specs/generic-config.lang
+URL: https://github.com/e33io/dotfiles/blob/main/usr/share/gtksourceview-4/language-specs/generic-config.lang
 -->
 
 <language id="generic-config" name="Generic Config" version="2.0" _section="Other">

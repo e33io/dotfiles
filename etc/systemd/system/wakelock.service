@@ -1,4 +1,4 @@
-# URL: https://git.sr.ht/~e33io/dotfiles/tree/main/item/etc/systemd/system/wakelock.service
+# URL: https://github.com/e33io/dotfiles/blob/main/etc/systemd/system/wakelock.service
 # Lock the screen on resume from suspend (using i3lock), for laptop use
 #
 # Copy file to:

@@ -2,7 +2,7 @@
 
 <!--
 ini - highlighting for .ini files
-URL: https://git.sr.ht/~e33io/dotfiles/tree/main/item/usr/share/gtksourceview-4/language-specs/ini.lang
+URL: https://github.com/e33io/dotfiles/blob/main/usr/share/gtksourceview-4/language-specs/ini.lang
 -->
 
 <language id="ini" name=".ini" version="2.0" _section="Other">

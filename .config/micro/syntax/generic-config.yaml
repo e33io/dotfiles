@@ -1,7 +1,7 @@
 filetype: config
 
 # Generic Config - highlighting for files not supported by other syntax plugins
-# URL: https://git.sr.ht/~e33io/dotfiles/tree/main/item/.config/micro/syntax/generic-config.yaml
+# URL: https://github.com/e33io/dotfiles/blob/main/.config/micro/syntax/generic-config.yaml
 
 detect:
     filename: "\\.(conf|config|gtkrc.*|micro|rasi)$|/(conf|config|dunstrc|gtkrc.*|rc|sources\\.list)$"

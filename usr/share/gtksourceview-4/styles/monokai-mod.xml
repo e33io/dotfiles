@@ -2,7 +2,7 @@
 
 <!--
 Monokai Mod - text editor theme
-URL: https://git.sr.ht/~e33io/dotfiles/tree/main/item/usr/share/gtksourceview-4/styles/monokai-mod.xml
+URL: https://github.com/e33io/dotfiles/blob/main/usr/share/gtksourceview-4/styles/monokai-mod.xml
 -->
 
 <style-scheme id="monokai-mod" _name="Monokai Mod" version="1.0">
