@@ -1,4 +1,4 @@
-# Please see https://wiki.debian.org/SourcesList for a complete reference!
+# Reference: https://wiki.debian.org/SourcesList
 
 deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware
 deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware

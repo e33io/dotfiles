@@ -1,4 +1,4 @@
-# Please see https://www.nongnu.org/xbindkeys/xbindkeys.html for a complete reference!
+# Reference: https://www.nongnu.org/xbindkeys/xbindkeys.html
 
 #########################################################################
 # Switch to next / prev workspace with mouse side buttons (using xdotool)
