@@ -216,3 +216,4 @@ for_window [title="Extension.*uBlock.*"] floating enable, resize set 1920 1280, 
 for_window [title="Kvantum Manager"] floating enable, resize set 1600 1600, move position center
 for_window [title="Write: .* Thunderbird"] floating enable, resize set 1920 1920, move position center
 for_window [window_role="GtkFileChooserDialog"] floating enable, resize set 1728 1188, move position center
+for_window [window_role="pop-up"] floating enable
