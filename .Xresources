@@ -26,7 +26,7 @@ XTerm*locale:          true
 XTerm*loginshell:      true
 XTerm*omitTranslation: popup-menu
 XTerm*termName:        xterm-256color
-XTerm*iconHint:        /usr/share/pixmaps/term_32x32
+XTerm*iconHint:        /usr/share/pixmaps/xterm-mod_32x32
 XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
 XTerm.vt100.translations: #override \n\
  Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
