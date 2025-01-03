@@ -1,0 +1,42 @@
+# Reference: https://ghostty.org/docs/config/reference
+
+# Fonts ------------------------------
+font-family = PlexMonoMod Nerd Font
+font-size = 10
+
+# Cursor -----------------------------
+shell-integration-features = no-cursor
+cursor-style = block
+
+# Window -----------------------------
+window-padding-x = 4
+window-padding-y = 4
+window-height = 32
+window-width = 104
+
+# Confirm on close -------------------
+confirm-close-surface = false
+
+# Colors (Monokai Mod) ---------------
+palette = 0=#0f0f0f
+palette = 1=#fb2c67
+palette = 2=#35b451
+palette = 3=#fce14f
+palette = 4=#23a0de
+palette = 5=#8478df
+palette = 6=#22cacb
+palette = 7=#cccccc
+palette = 8=#fd9353
+palette = 9=#fc618d
+palette = 10=#53cc6d
+palette = 11=#fce566
+palette = 12=#4db2e4
+palette = 13=#948ae3
+palette = 14=#40dedf
+palette = 15=#dddddd
+background = 1e1e1e
+foreground = dddddd
+cursor-color = dddddd
+selection-background = dddddd
+selection-foreground = 1e1e1e
+
