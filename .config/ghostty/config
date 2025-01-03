@@ -1,6 +1,6 @@
 # Reference: https://ghostty.org/docs/config/reference
 
-# Fonts ------------------------------
+# Font -------------------------------
 font-family = PlexMonoMod Nerd Font
 font-size = 10
 
