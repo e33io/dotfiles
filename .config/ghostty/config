@@ -6,13 +6,17 @@ font-size = 10
 
 # Cursor -----------------------------
 shell-integration-features = no-cursor
+cursor-style-blink = true
 cursor-style = block
 
 # Window -----------------------------
 window-padding-x = 4
 window-padding-y = 4
-window-height = 32
 window-width = 104
+window-height = 32
+
+# Scrollback -------------------------
+scrollback-limit = 4000
 
 # Confirm on close -------------------
 confirm-close-surface = false
@@ -37,6 +41,5 @@ palette = 15=#dddddd
 background = 1e1e1e
 foreground = dddddd
 cursor-color = dddddd
-selection-background = dddddd
-selection-foreground = 1e1e1e
-
+selection-invert-fg-bg = true
+bold-is-bright = true
