@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=CAVA Visualizer
+GenericName=Audio Visualizer
+Comment=CLI Audio Visualizer
+Icon=utilities-system-monitor
+Exec=cava
+Terminal=true
+Categories=ConsoleOnly;Utility;
+Keywords=audio;

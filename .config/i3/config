@@ -1,0 +1,219 @@
+# Reference: https://i3wm.org/docs/userguide.html
+
+# Start XDG autostart .desktop files (using dex)
+exec --no-startup-id dex --autostart --environment i3
+
+# Include desktop OR laptop specific config file,
+# comment out the unneeded option
+include ~/.config/i3/desktop.conf
+#include ~/.config/i3/laptop.conf
+
+# Set mod key (Mod4 = Windows key)
+set $mod Mod4
+
+# Change window focus
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Move focused window
+bindsym $mod+Shift+Left move left 80 px
+bindsym $mod+Shift+Down move down 80 px
+bindsym $mod+Shift+Up move up 80 px
+bindsym $mod+Shift+Right move right 80 px
+
+# Resize window (you can also use the mouse at the border)
+bindsym Shift+Left resize shrink width 40 px or 2 ppt
+bindsym Shift+Down resize grow height 40 px or 2 ppt
+bindsym Shift+Up resize shrink height 40 px or 2 ppt
+bindsym Shift+Right resize grow width 40 px or 2 ppt
+
+# Split container in horizontal orientation
+bindsym $mod+h split h
+
+# Split container in vertical orientation
+bindsym $mod+v split v
+
+# Change container layout
+bindsym $mod+e layout toggle split
+bindsym $mod+w layout tabbed
+bindsym $mod+s layout stacking
+
+# Toggle fullscreen mode for focused window
+bindsym $mod+Shift+f fullscreen toggle
+
+# Resize window gaps
+bindsym $mod+equal gaps inner all plus 4
+bindsym $mod+minus gaps inner all minus 4
+
+# Move floating window: $mod+button1 (left mouse button) and drag
+# Resize floating window, non-proportionally: $mod+button3 (right mouse button) and drag
+# Resize floating window, proportionally: $mod+Shift+button3 (right mouse button) and drag
+floating_modifier $mod
+
+# Toggle tiling / floating mode for focused window
+bindsym $mod+Shift+space floating toggle, resize set 1728 1188, move position center
+
+# Change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# Focus the parent container
+bindsym $mod+a focus parent
+
+# Focus the child container
+bindsym $mod+z focus child
+
+# Switch to specific workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# Switch to next / prev workspace
+bindsym ctrl+Mod1+Right workspace next
+bindsym ctrl+Mod1+Left workspace prev
+
+# Switch to workspace with urgent window
+bindsym $mod+u [urgent=latest] focus
+
+# Move and follow focused container to specific workspace
+bindsym $mod+Shift+1 move container to workspace 1; workspace 1
+bindsym $mod+Shift+2 move container to workspace 2; workspace 2
+bindsym $mod+Shift+3 move container to workspace 3; workspace 3
+bindsym $mod+Shift+4 move container to workspace 4; workspace 4
+bindsym $mod+Shift+5 move container to workspace 5; workspace 5
+bindsym $mod+Shift+6 move container to workspace 6; workspace 6
+bindsym $mod+Shift+7 move container to workspace 7; workspace 7
+bindsym $mod+Shift+8 move container to workspace 8; workspace 8
+bindsym $mod+Shift+9 move container to workspace 9; workspace 9
+bindsym $mod+Shift+0 move container to workspace 10; workspace 10
+
+# Show list of open windows
+bindsym $mod+o exec --no-startup-id rofi -show window
+
+# Kill (quit) focused window
+bindsym $mod+Shift+q kill
+
+# Reload the i3 configuration file
+bindsym $mod+ctrl+r reload
+
+# Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+# Launch rofi power menu (lock, logout, reboot, shutdown)
+bindsym $mod+p exec --no-startup-id ~/.local/bin/rofi-power.sh
+
+# The lock screen and dpms key bindings below are in reference to
+# configurations in either the ~/.config/i3/desktop.conf
+# OR the ~/.config/i3/laptop.conf file
+#
+# Lock screen (session)
+# $mod+x
+#
+# Disable dpms to keep session awake (like Caffeine)
+# $mod+ctrl+equal
+#
+# Re-enable dpms to resume screen blanking and locking
+# $mod+ctrl+minus
+
+# Volume and mic controls (using pactl)
+set $refresh_i3status killall -SIGUSR1 i3status
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+# Media player controls (using playerctl)
+bindsym XF86AudioPrev exec --no-startup-id playerctl --all-players previous
+bindsym XF86AudioPlay exec --no-startup-id playerctl --all-players play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl --all-players next
+bindsym ctrl+Left exec --no-startup-id playerctl --all-players previous
+bindsym ctrl+Down exec --no-startup-id playerctl --all-players play-pause
+bindsym ctrl+Right exec --no-startup-id playerctl --all-players next
+
+# Send notication of music that's now playing
+bindsym $mod+m  exec --no-startup-id ~/.local/bin/now-playing.sh
+
+# Set font for i3bar and window titlebars
+font pango:monospace 8.5
+
+# Start i3bar (workspace bar including i3status with py3status)
+bar {
+    position top
+    padding -1px 4px 0 0
+    tray_padding 0
+    workspace_min_width 20
+    separator_symbol "|"
+    status_command py3status -c ~/.config/i3/i3status.conf
+    colors {
+        # i3bar colors
+        background #1e1e1e
+        statusline #eeeeee
+        separator  #1c6dcf
+        #                  border  bckgrd  text
+        focused_workspace  #1c6dcf #1c6dcf #ffffff
+        active_workspace   #535353 #535353 #eeeeee
+        inactive_workspace #1e1e1e #1e1e1e #eeeeee
+        urgent_workspace   #a80e15 #a80e15 #ffffff
+        binding_mode       #6f3c95 #6f3c95 #ffffff
+    }
+}
+
+# i3 window colors      border  bckgrd  text    indictr child_border
+client.focused          #1c6dcf #1c6dcf #ffffff #438de6 #1c6dcf
+client.focused_inactive #535353 #1e1e1e #cccccc #6e6e6e #535353
+client.unfocused        #535353 #1e1e1e #cccccc #6e6e6e #535353
+client.urgent           #a80e15 #a80e15 #ffffff #dc121b #a80e15
+client.placeholder      #1e1e1e #1e1e1e #eeeeee #1e1e1e #1e1e1e
+client.background       #7f7f7f
+
+# Set border sizes and eliminate titlebars for tiled windows
+default_border pixel 2
+default_floating_border pixel 2
+for_window [all] border pixel 2
+
+# Set window gaps
+gaps inner 8
+
+# Launch rofi (program launcher)
+bindsym $mod+d exec --no-startup-id rofi -show drun
+
+# Launch specific programs
+bindsym $mod+Return exec --no-startup-id kitty
+bindsym $mod+Shift+Return exec --no-startup-id thunar
+bindsym $mod+b exec --no-startup-id firefox
+bindsym $mod+t exec --no-startup-id /opt/sublime_text/sublime_text
+bindsym $mod+Shift+t exec --no-startup-id /opt/sublime_text/sublime_text --launch-or-new-window
+bindsym $mod+g exec --no-startup-id /opt/sublime_merge/sublime_merge
+bindsym $mod+f exec --no-startup-id filezilla
+bindsym $mod+i exec --no-startup-id gimp
+bindsym $mod+c exec --no-startup-id GDK_SCALE=1 signal-desktop
+
+# Launch Xfce Screenshooter for fullscreen and active window screenshots
+bindsym Print exec --no-startup-id ~/.local/bin/screenshot.sh fullscreen
+bindsym $mod+Print exec --no-startup-id ~/.local/bin/screenshot.sh window
+# Launch Flameshot for selected area screenshots
+bindsym Shift+Print exec --no-startup-id ~/.local/bin/screenshot.sh selection
+
+# Force window floating mode and size for specific programs
+for_window [class="Atril|Soundconverter"] floating enable, resize set 1600 1600, move position center
+for_window [class="Dconf-editor|qt.*ct|Ristretto"] floating enable, resize set 1440 1152, move position center
+for_window [class="Engrampa|Lxappearance|Xarchiver"] floating enable, resize set 1280 1080, move position center
+for_window [class="flameshot|Galculator|Gnome-disks|Lightdm.*settings"] floating enable, move position center
+for_window [class="GParted|Xfburn"] floating enable, resize set 1920 1280, move position center
+for_window [class="Gdebi-gtk|Gpick|Pavucontrol"] floating enable, resize set 1440 1080, move position center
+for_window [class="imv|mpv|Parole"] floating enable, resize set 1440 900, move position center
+for_window [class="Nitrogen"] floating enable, resize set 1080 1080, move position center
+for_window [title="About Mozilla .*|About LibreWolf|About Tor Browser"] floating enable
+for_window [title="Extension.*uBlock.*"] floating enable, resize set 1920 1280, move position center
+for_window [title="Kvantum Manager"] floating enable, resize set 1600 1600, move position center
+for_window [title="Write: .* Thunderbird"] floating enable, resize set 1920 1920, move position center
+for_window [window_role="GtkFileChooserDialog"] floating enable, resize set 1728 1188, move position center
+for_window [window_role="pop-up"] floating enable

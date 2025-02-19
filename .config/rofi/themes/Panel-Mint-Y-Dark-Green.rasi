@@ -1,0 +1,18 @@
+/*********************************************
+ * Rofi Panel-Mint-Y-Dark-Green Theme
+ ********************************************/
+
+/* theme settings */
+@import "~/.config/rofi/themes/panel-style-settings.rasi"
+
+/* theme colors and entry font */
+* {
+    background-color:    #1e1e1e;
+    selected-background: #35a854;
+    text-color:          #eeeeee;
+    selected-text-color: #ffffff;
+    border-color:        #3bbe5f;
+    dim-text:            rgba(255,255,255,0.25);
+    dim-border:          rgba(255,255,255,0.5);
+    entry-font:          "sans-serif 10";
+}

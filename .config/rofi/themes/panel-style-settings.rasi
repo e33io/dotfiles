@@ -1,0 +1,54 @@
+/******************************************************************
+ * Rofi panel-style-settings
+ *****************************************************************/
+
+configuration {
+    drun-match-fields:   "name,generic,exec";
+    drun-display-format: "{name}";
+    disable-history:     true;
+    window-format:       "[ws{w}]\t{n}";
+    show-icons:          true;
+    hover-select:        true;
+    me-select-entry:     "";
+    me-accept-entry:     "MousePrimary";
+}
+window {
+    location:     west;
+    anchor:       west;
+    height:       100%;
+    padding:      1.5em 3em;
+    children:     [ entry, listview ];
+    border:       0 4px 0 0;
+    border-color: @border-color;
+    width:        42ch;
+}
+entry {
+    expand:            false;
+    padding:           1.5em 0 0.25em;
+    border:            0 0 2px;
+    border-color:      @dim-border;
+    placeholder:       "Search";
+    placeholder-color: @dim-text;
+    font:              @entry-font;
+}
+listview {
+    layout:  vertical;
+    spacing: 0.5em;
+    padding: 1.5em 0 0;
+}
+element {
+    padding: 0 0.25em;
+}
+element selected {
+    background-color: @selected-background;
+    text-color:       @selected-text-color;
+}
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+    padding:          0.5em;
+}
+element-icon {
+    background-color: inherit;
+    size:             48px;
+}

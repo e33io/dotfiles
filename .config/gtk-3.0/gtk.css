@@ -1,0 +1,32 @@
+/************************************************
+**** GTK styles *********************************
+************************************************/
+
+/* Terminal styles */
+VteTerminal,
+vte-terminal {
+	padding: 0.7em;
+}
+
+/*** Custom theme styles **********************
+menubar, .menubar {
+	background-color: @theme_bg_color;
+}
+menubar {
+	border-bottom: 1px solid @unfocused_borders;
+	box-shadow: none;
+}
+.view:not(.sourceview) {
+	color: @theme_fg_color;
+}
+.view:selected {
+	color: @theme_selected_fg_color;
+	outline-style: dashed;
+	outline-width: 1px;
+}
+tooltip {
+	border-radius: 0;
+	border: none;
+	box-shadow: none;
+}
+*/

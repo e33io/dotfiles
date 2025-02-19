@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=CMUS Player
+GenericName=Music Player
+Comment=CLI Music Player
+Icon=audio-player
+Exec=cmus
+Terminal=true
+Categories=AudioVideo;Audio;Player;ConsoleOnly;
+Keywords=audio;music;song;mp3;

@@ -1,0 +1,38 @@
+filetype: css
+
+detect:
+    filename: "\\.css$"
+
+rules:
+    - preproc: "\\b[a-zA-Z0-9\\-_]+\\b"
+    - type: "\\.[a-zA-Z0-9\\-_]+\\b"
+    - identifier: "\\#[a-zA-Z0-9\\-_]+\\b"
+    - symbol.brackets:
+        start: "\\{"
+        end: "\\}"
+        rules:
+            - constant: "[a-zA-Z0-9\\-_]+\\("
+            - symbol.operator: "\\b(solid|transparent|baseline|block|collapse|right|left)\\b"
+            - identifier.class: "[a-zA-Z0-9\\-_]+:"
+            - symbol.operator: "[;:*,]"
+            - symbol.brackets: "[{}()]"
+            - identifier: "!important"
+            - constant.string:
+                start: "\""
+                skip: "\\\\."
+                end: "\""
+                rules: []
+            - constant.string:
+                start: "'"
+                skip: "\\\\."
+                end: "'"
+                rules: []
+            - comment:
+                start: "/\\*"
+                end: "\\*/"
+                rules: []
+    - comment:
+        start: "/\\*"
+        end: "\\*/"
+        rules:
+            - todo: "(TODO|XXX|FIXME):?"

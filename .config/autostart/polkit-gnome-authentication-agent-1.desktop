@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=polkit-authentication-agent
+Comment=Start polkit authentication agent
+Exec=/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+Terminal=false
+NoDisplay=true

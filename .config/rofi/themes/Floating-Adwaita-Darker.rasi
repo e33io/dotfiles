@@ -1,0 +1,33 @@
+/*******************************************************
+ * Rofi Floating-Adwaita-Darker Theme
+ ******************************************************/
+
+/* theme settings */
+@import "~/.config/rofi/themes/floating-window-settings.rasi"
+
+/* theme colors */
+* {
+    selected-normal-foreground:  #f4f4f4;
+    foreground:                  #eeeeee;
+    normal-foreground:           #eeeeee;
+    alternate-normal-background: #252525;
+    selected-urgent-foreground:  #f4f4f4;
+    urgent-foreground:           #ed2f37;
+    alternate-urgent-background: #252525;
+    active-foreground:           #eeeeee;
+    selected-active-foreground:  #f4f4f4;
+    alternate-active-background: #252525;
+    background:                  #1e1e1e;
+    alternate-normal-foreground: #eeeeee;
+    normal-background:           #1e1e1e;
+    selected-normal-background:  #15539e;
+    border-color:                #1a65c1;
+    separatorcolor:              #414141;
+    urgent-background:           #1e1e1e;
+    selected-urgent-background:  #a60e15;
+    alternate-urgent-foreground: #ed2f37;
+    background-color:            #1e1e1e;
+    alternate-active-foreground: #eeeeee;
+    active-background:           #1e1e1e;
+    selected-active-background:  #15539e;
+}

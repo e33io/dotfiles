@@ -1,0 +1,11 @@
+filetype: filemanager
+
+detect:
+    filename: "^filemanager$"
+
+rules:
+    # the ".." and directories
+    - identifier.var: "^\\.\\.$|\\-\\s.*|\\+\\s.*"
+
+    # the ascii separator line
+    - underlined: "^─*$"

@@ -1,0 +1,10 @@
+{
+    "colorscheme": "monokai-mod",
+    "diffgutter": true,
+    "hlsearch": true,
+    "mkparents": true,
+    "softwrap": true,
+    "statusformatl": " $(filename) $(modified)| Line $(line), Column $(col)",
+    "statusformatr": "$(bind:ToggleKeyMenu): bindings | $(bind:ToggleHelp): help ",
+    "wordwrap": true
+}

@@ -1,0 +1,23 @@
+# URL: https://github.com/e33io/dotfiles/blob/main/etc/systemd/system/wakelock.service
+# Lock the screen on resume from suspend (using i3lock), for laptop use
+#
+# Copy file to:
+# /etc/systemd/system/wakelock.service
+#
+# Edit `username` in Service section to match current user's username
+#
+# Enable service:
+# sudo systemctl enable wakelock
+
+[Unit]
+Description=Lock the screen on resume from suspend
+Before=sleep.target suspend.target
+
+[Service]
+User=username
+Type=forking
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/i3lock -c 252525
+
+[Install]
+WantedBy=sleep.target suspend.target

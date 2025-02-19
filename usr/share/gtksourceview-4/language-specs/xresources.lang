@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Xresources - highlighting for Xresources and Xdefaults files
+URL: https://github.com/e33io/dotfiles/blob/main/usr/share/gtksourceview-4/language-specs/xresources.lang
+-->
+
+<language id="xresources" name="Xresources" version="2.0" _section="Other">
+  <metadata>
+    <property name="mimetypes">text/xresources;text/xdefaults</property>
+    <property name="globs">Xresources;.Xresources;Xdefaults;.Xdefaults</property>
+    <property name="line-comment-start">!</property>
+  </metadata>
+
+  <styles>
+    <style id="hex-color" name="HEX color" map-to="css:keyword"/>
+    <style id="number" name="Number" map-to="def:number"/>
+    <style id="keysymbol" name="Key symbol" map-to="def:keyword"/>
+    <style id="boolean-value" name="Boolean value" map-to="def:boolean"/>
+    <style id="comment" name="Comment" map-to="def:comment"/>
+  </styles>
+
+  <definitions>
+    <context id="hex-color" style-ref="hex-color">
+      <match>#([a-f0-9]{8}|[a-f0-9]{6}|[a-f0-9]{4}|[a-f0-9]{3})\%]</match>
+    </context>
+    <context id="number" style-ref="number">
+      <match>(\b[0-9]+(\.[0-9]+)?|\.[0-9]+)?([_|x]{1}[\+-]?[\.]?[0-9]+)?</match>
+    </context>
+    <context id="keysymbol" style-ref="keysymbol">
+      <match>\[|\]|\(|\)|\{|\}|\@|\.|,|:|;|\*|=|\-|\+|\%|\!</match>
+    </context>
+    <context id="boolean-value" style-ref="boolean-value">
+      <keyword>TRUE|true</keyword>
+      <keyword>FALSE|false</keyword>
+    </context>
+    <context id="line-comment" style-ref="comment" end-at-line-end="true" class="comment" class-disabled="no-spell-check">
+      <start>\!|\!\s</start>
+      <include>
+        <context ref="def:line-continue"/>
+      </include>
+    </context>
+    <context id="xresources" class="no-spell-check">
+      <include>
+        <context ref="line-comment"/>
+        <context ref="hex-color"/>
+        <context ref="number"/>
+        <context ref="keysymbol"/>
+        <context ref="boolean-value"/>
+      </include>
+    </context>
+  </definitions>
+</language>

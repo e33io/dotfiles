@@ -1,0 +1,5 @@
+# Custom GTK2 settings
+
+# Set icon sizes for HiDPI displays
+gtk-icon-sizes="gtk-menu=32,32:gtk-button=32,32"
+gtk-recent-files-max-age=0

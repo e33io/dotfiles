@@ -1,0 +1,11 @@
+# Reference: https://www.nongnu.org/xbindkeys/xbindkeys.html
+
+#########################################################################
+# Switch to next / prev workspace with mouse side buttons (using xdotool)
+#########################################################################
+
+"xdotool set_desktop $(expr $(expr $(xdotool get_desktop) + 1) % $(xdotool get_num_desktops))"
+    b:8
+
+"xdotool set_desktop $(expr $(expr $(xdotool get_desktop) + $(expr $(xdotool get_num_desktops) - 1)) % $(xdotool get_num_desktops))"
+    b:9

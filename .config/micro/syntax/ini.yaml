@@ -1,0 +1,25 @@
+filetype: ini
+
+detect:
+    filename: "\\.(ini|cfg|desktop|lfl|list|override|theme|tscn|tres)$|(cfg|pinforc|project\\.godot)$"
+
+rules:
+    - constant.bool.true: "\\btrue\\b"
+    - constant.bool.false: "\\bfalse\\b"
+    - identifier: "^[[:space:]]*[^=]*="
+    - special: "^[[:space:]]*\\[.*\\]$"
+    - statement: "[=;]"
+    - constant.string: "\"(\\\\.|[^\"])*\"|'(\\\\.|[^'])*'"
+
+    - identifier.class: "#[A-Fa-f0-9]{6}|[=][[:space:]][A-Fa-f0-9]{6}"
+
+    - comment:
+        start: "^#|#+[[:space:]]"
+        end: "$"
+        rules:
+            - todo: "(TODO|XXX|FIXME):?"
+    - comment:
+        start: "^;"
+        end: "$"
+        rules:
+            - todo: "(TODO|XXX|FIXME):?"

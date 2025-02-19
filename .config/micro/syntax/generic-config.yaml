@@ -1,0 +1,67 @@
+filetype: config
+
+# Generic Config - highlighting for files not supported by other syntax plugins
+# URL: https://github.com/e33io/dotfiles/blob/main/.config/micro/syntax/generic-config.yaml
+
+detect:
+    filename: "\\.(conf|config|gtkrc.*|micro|rasi)$|/(conf|config|dunstrc|gtkrc.*|rc|sources\\.list)$"
+
+rules:
+    # configuration commands
+    - identifier: "^[a-zA-Z0-9_:\\*\\-\\.]*[[:space:]]|^[a-zA-Z0-9_:\\*\\-\\.]*[\\[]"
+
+    # variables
+    - type: "\\$[a-zA-Z0-9_:\\*\\-\\.]+"
+
+    # numbers
+    - constant: "[[:space:]][0-9]+|[,:=\\.\\-\\+][0-9]+"
+    - constant: "[0-9]+x{1}[0-9]+|[0-9]+[\\%]"
+
+    # HEX colors
+    - identifier.class: "#[A-Fa-f0-9]{6}|[=][[:space:]]*[A-Fa-f0-9]{6}"
+
+    # brackets, punctuation and symbols
+    - statement: "[\\[\\]\\(\\)\\{\\}@,:;=\\*\\.\\-\\+\\%\\!]"
+    - symbol.operator: "[\\<\\>]"
+
+    # unicode fonts
+    - identifier.class: "U{1}[\\+][a-zA-Z0-9]{4}"
+
+    # operators
+    - identifier.var: "&&"
+
+    # boolean values
+    - identifier.var: "true|false"
+
+    # URLs
+    - type: "(http)[a-zA-Z0-9_:/\\-\\.]*"
+
+    # quoted strings
+    - constant.string:
+        start: "\""
+        end: "\""
+        skip: "\\."
+        rules: []
+    - constant.string:
+        start: "'"
+        end: "'"
+        skip: "\\."
+        rules: []
+
+    # comments
+    - comment:
+        start: "^#|#+[[:space:]]|^[[:space:]]{4}#+"
+        end: "$"
+        rules: []
+    - comment:
+        start: "<!--"
+        end: "-->"
+        rules: []
+    - comment:
+        start: "/\\*"
+        end: "\\*/"
+        rules: []
+    - comment:
+        start: "^;"
+        end: "$"
+        rules: []

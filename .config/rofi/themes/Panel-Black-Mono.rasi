@@ -1,0 +1,18 @@
+/*********************************************
+ * Rofi Panel-Black-Mono Theme
+ ********************************************/
+
+/* theme settings */
+@import "~/.config/rofi/themes/panel-style-settings.rasi"
+
+/* theme colors and entry font */
+* {
+    background-color:    #0e0e0e;
+    selected-background: #ffffff;
+    text-color:          #ffffff;
+    selected-text-color: #0e0e0e;
+    border-color:        @background-color;
+    dim-text:            rgba(255,255,255,0.25);
+    dim-border:          rgba(255,255,255,0.5);
+    entry-font:          "sans-serif 10";
+}

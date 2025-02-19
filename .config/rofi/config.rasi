@@ -1,0 +1,7 @@
+@theme "~/.config/rofi/themes/Dmenu-Adwaita-Dark.rasi"
+
+configuration {
+    font: "sans-serif 9";
+    icon-theme: "Papirus-Dark";
+    dpi: 192;
+}

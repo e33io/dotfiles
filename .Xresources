@@ -1,0 +1,64 @@
+! Xcursor settings -------------------------------------------------
+Xcursor.theme: Adwaita
+Xcursor.size:  48
+
+! Xft font settings ------------------------------------------------
+Xft.dpi:       192
+Xft.antialias: true 
+Xft.hinting:   true
+Xft.hintstyle: hintslight
+Xft.rgba:      rgb
+Xft.autohint:  false
+Xft.lcdfilter: lcddefault
+
+! XTerm settings ---------------------------------------------------
+XTerm*renderFont:      true
+XTerm*faceName:        xft:SovranMono Nerd Font
+XTerm*faceSize:        10
+XTerm*allowBoldFonts:  true
+XTerm*cursorBlink:     true
+XTerm*internalBorder:  14
+XTerm.vt100.geometry:  104x32
+XTerm*scrollBar:       false
+XTerm*savelines:       4000
+XTerm*utf8:            2
+XTerm*locale:          true
+XTerm*loginshell:      true
+XTerm*omitTranslation: popup-menu
+XTerm*termName:        xterm-256color
+XTerm*iconHint:        /usr/share/pixmaps/xterm-mod_32x32
+XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+XTerm.vt100.translations: #override \n\
+ Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+ Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+XTerm.vt100.metaSendsEscape: true
+
+! X colors (Monokai Mod) -------------------------------------------
+*cursorColor: #dddddd
+*foreground:  #dddddd
+*background:  #1e1e1e
+! black/orange ------------------
+*color0:  #0f0f0f
+*color8:  #fd9353
+! red ---------------------------
+*color1:  #fb2c67
+*color9:  #fc618d
+! green -------------------------
+*color2:  #35b451
+*color10: #53cc6d
+! yellow ------------------------
+*color3:  #fce14f
+*color11: #fce566
+! blue --------------------------
+*color4:  #23a0de
+*color12: #4db2e4
+! purple ------------------------
+*color5:  #8478df
+*color13: #948ae3
+! cyan --------------------------
+*color6:  #22cacb
+*color14: #40dedf
+! white -------------------------
+*color7:  #cccccc
+*color15: #dddddd
+! -------------------------------
