@@ -24,6 +24,8 @@ if [ ! -t 0 ] ; then
     xsetroot -solid "#0b2f5a" &
     # Load ~/.Xresources
     xrdb ~/.Xresources &
+    # Run xssproxy
+    xssproxy &
 fi
 
 # Set HiDPI scaling (based on Xft.dpi: 192)
