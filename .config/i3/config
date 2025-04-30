@@ -216,11 +216,11 @@ bindsym Shift+Print exec --no-startup-id ~/.local/bin/screenshot.sh selection
 for_window [class="Atril|Soundconverter"] floating enable, resize set 1600 1600, move position center
 for_window [class="Dconf-editor|qt.*ct|Ristretto"] floating enable, resize set 1440 1152, move position center
 for_window [class="Engrampa|Lxappearance|Xarchiver"] floating enable, resize set 1280 1080, move position center
-for_window [class="flameshot|Galculator|Gnome-disks|Lightdm.*settings"] floating enable, move position center
+for_window [class="flameshot|Galculator|Gnome-disks"] floating enable, move position center
 for_window [class="GParted|Xfburn"] floating enable, resize set 1920 1280, move position center
 for_window [class="Gdebi-gtk|Gpick|Pavucontrol"] floating enable, resize set 1440 1080, move position center
 for_window [class="imv|mpv|Parole"] floating enable, resize set 1440 900, move position center
-for_window [class="Nitrogen"] floating enable, resize set 1080 1080, move position center
+for_window [class="Lightdm.*settings|Nitrogen"] floating enable, resize set 1080 1080, move position center
 for_window [title="About Mozilla .*|About LibreWolf|About Tor Browser"] floating enable
 for_window [title="Extension.*uBlock.*"] floating enable, resize set 1920 1280, move position center
 for_window [title="Kvantum Manager"] floating enable, resize set 1600 1600, move position center
