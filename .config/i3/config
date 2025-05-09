@@ -198,7 +198,7 @@ bindsym $mod+d exec --no-startup-id rofi -show drun
 # Launch specific programs
 bindsym $mod+Return exec --no-startup-id kitty
 bindsym $mod+Shift+Return exec --no-startup-id thunar
-bindsym $mod+b exec --no-startup-id GDK_SCALE=1 brave
+bindsym $mod+b exec --no-startup-id GDK_SCALE=1 brave-browser
 bindsym $mod+t exec --no-startup-id /opt/sublime_text/sublime_text
 bindsym $mod+Shift+t exec --no-startup-id /opt/sublime_text/sublime_text --launch-or-new-window
 bindsym $mod+g exec --no-startup-id /opt/sublime_merge/sublime_merge
