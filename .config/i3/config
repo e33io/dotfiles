@@ -206,10 +206,9 @@ bindsym $mod+f exec --no-startup-id filezilla
 bindsym $mod+i exec --no-startup-id gimp
 bindsym $mod+c exec --no-startup-id GDK_SCALE=1 signal-desktop
 
-# Launch Xfce Screenshooter for fullscreen and active window screenshots
+# Save fullscreen, active window, or selected area screenshots (using scrot)
 bindsym Print exec --no-startup-id ~/.local/bin/screenshot.sh fullscreen
 bindsym $mod+Print exec --no-startup-id ~/.local/bin/screenshot.sh window
-# Launch Flameshot for selected area screenshots
 bindsym Shift+Print exec --no-startup-id ~/.local/bin/screenshot.sh selection
 
 # Force window floating mode and size for specific programs
