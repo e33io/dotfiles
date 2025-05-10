@@ -1,12 +1,11 @@
 #!/bin/bash
 
-# ========================================================================
-# Save fullscreen or active window screenshot with Xfce Screenshooter and
-# send dunst notification, or save selected area screenshot with Flameshot
-# ------------------------------------------------------------------------
+# =======================================================================
+# Save fullscreen, active window, or selected area screenshots with scrot
+# -----------------------------------------------------------------------
 # Call script with `screenshot.sh fullscreen` or `screenshot.sh window`
 # or `screenshot.sh selection`
-# ========================================================================
+# =======================================================================
 
 set -eu
 
@@ -21,14 +20,16 @@ send_notification () {
 
 case $1 in
     fullscreen)
-        xfce4-screenshooter -f -s $screenshot_file > /dev/null \
-        && send_notification
+        scrot $screenshot_file
+        send_notification
     ;;
     window)
-        xfce4-screenshooter -w -s $screenshot_file > /dev/null \
-        && send_notification
+        scrot -u -b $screenshot_file
+        send_notification
     ;;
     selection)
-        flameshot gui > /dev/null
+        sleep 0.2
+        scrot -f -l width=2,color="#ff0000" -s $screenshot_file
+        send_notification
     ;;
 esac
