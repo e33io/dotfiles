@@ -43,11 +43,6 @@ alias la='ls -A'
 alias ll='ls -alF'
 alias l='ls -CF'
 
-# Confirm before overwriting
-alias cp='cp -i'
-alias mv='mv -i'
-alias rm='rm -i'
-
 # Set fzf command to include hidden files and dirs
 export FZF_DEFAULT_COMMAND="find . -printf '%P\n'"
 
