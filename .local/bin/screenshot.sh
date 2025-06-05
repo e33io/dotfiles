@@ -12,10 +12,12 @@ set -eu
 notify_icon="applets-screenshooter"
 notify_title="Screenshot Saved"
 notify_body="view image file in ~/Pictures"
+notify_sound="/usr/share/sounds/freedesktop/stereo/camera-shutter.oga"
 screenshot_file="$HOME/Pictures/screenshot_$(date +%Y-%m-%d_%H-%M-%S).png"
 
 send_notification () {
     dunstify -i "$notify_icon" "$notify_title" "$notify_body"
+    mpv $notify_sound
 }
 
 case $1 in
