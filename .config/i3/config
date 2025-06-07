@@ -3,10 +3,9 @@
 # Start XDG autostart .desktop files (using dex)
 exec --no-startup-id dex --autostart --environment i3
 
-# Include desktop OR laptop specific config file,
-# comment out the unneeded option
-include ~/.config/i3/desktop.conf
-#include ~/.config/i3/laptop.conf
+# Start xss-lock and set dpms time to trigger xss-lock
+exec --no-startup-id xss-lock -l -- i3lock -n -c 252525
+exec --no-startup-id sleep 1 && xset dpms 300 300 300
 
 # Set xrandr scaling variables (percentage)
 #set $125 1.6x1.6
@@ -135,6 +134,10 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+# Monitor display brightness controls
+bindsym XF86MonBrightnessDown exec --no-startup-id ~/.local/bin/brightness.sh down
+bindsym XF86MonBrightnessUp exec --no-startup-id ~/.local/bin/brightness.sh up
 
 # Media player controls (using playerctl)
 bindsym XF86AudioPrev exec --no-startup-id playerctl --all-players previous
