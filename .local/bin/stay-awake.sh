@@ -4,9 +4,7 @@
 # Use "Stay Awake ON" to disable screen blanking and locking (like Caffeine)
 # or use "Stay Awake OFF" re-enable screen blanking and locking
 # --------------------------------------------------------------------------
-# Call script with `stay-awake.sh on-desktop` or `stay-awake.sh off-desktop`
-# for desktop-specific commands, or `stay-awake.sh on-laptop` or
-# `stay-awake.sh off-laptop` for laptop-specific commands
+# Call script with `stay-awake.sh on` or `stay-awake.sh off`
 # ==========================================================================
 
 set -eu
@@ -26,22 +24,12 @@ notification_off () {
 }
 
 case $1 in
-    on-desktop)
+    on)
         xset s off -dpms
         notification_on
     ;;
-    off-desktop)
+    off)
         xset s on +dpms
-        notification_off
-    ;;
-    on-laptop)
-        xset s off -dpms
-        xautolock -exit
-        notification_on
-    ;;
-    off-laptop)
-        xset s on +dpms
-        xautolock -time 5 -locker "systemctl suspend" -detectsleep
         notification_off
     ;;
 esac

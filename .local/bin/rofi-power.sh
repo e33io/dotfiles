@@ -18,7 +18,6 @@ choice=$(printf '%s\n' "${options[@]}" | rofi -dmenu -i -no-show-icons \
 case $choice in
     "Lock")
         loginctl lock-session
-        #i3lock -c 252525
     ;;
     "Logout")
         loginctl terminate-user $(whoami)
