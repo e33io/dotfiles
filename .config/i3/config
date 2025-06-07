@@ -120,18 +120,14 @@ bindsym $mod+Shift+r restart
 # Launch rofi power menu (lock, logout, reboot, shutdown)
 bindsym $mod+p exec --no-startup-id ~/.local/bin/rofi-power.sh
 
-# The lock screen and dpms key bindings below are in reference to
-# configurations in either the ~/.config/i3/desktop.conf
-# OR the ~/.config/i3/laptop.conf file
-#
-# Lock screen (session)
-# $mod+x
-#
+# Lock screen (session) with loginctl (to activate xss-lock)
+bindsym $mod+x exec --no-startup-id loginctl lock-session
+
 # Disable dpms to keep session awake (like Caffeine)
-# $mod+ctrl+equal
-#
+bindsym $mod+ctrl+equal exec --no-startup-id ~/.local/bin/stay-awake.sh on
+
 # Re-enable dpms to resume screen blanking and locking
-# $mod+ctrl+minus
+bindsym $mod+ctrl+minus exec --no-startup-id ~/.local/bin/stay-awake.sh off
 
 # Volume and mic controls (using pactl)
 set $refresh_i3status killall -SIGUSR1 i3status
