@@ -37,16 +37,3 @@ export QT_FONT_DPI=96
 
 # Set Qt theming
 export QT_QPA_PLATFORMTHEME=qt5ct
-
-# Set XSecureLock options
-#export XSECURELOCK_AUTH_FOREGROUND_COLOR="#eeeeee"
-#export XSECURELOCK_FONT="Inter:size=15"
-#export XSECURELOCK_BLANK_TIMEOUT="1"
-#export XSECURELOCK_BLANK_DPMS_STATE="off"
-#export XSECURELOCK_SHOW_KEYBOARD_LAYOUT="0"
-#export XSECURELOCK_KEY_XF86AudioMute_COMMAND="pactl set-sink-mute @DEFAULT_SINK@ toggle"
-#export XSECURELOCK_KEY_XF86AudioLowerVolume_COMMAND="pactl set-sink-volume @DEFAULT_SINK@ -5%"
-#export XSECURELOCK_KEY_XF86AudioRaiseVolume_COMMAND="pactl set-sink-volume @DEFAULT_SINK@ +5%"
-#export XSECURELOCK_KEY_XF86AudioPrev_COMMAND="playerctl --all-players previous"
-#export XSECURELOCK_KEY_XF86AudioPlay_COMMAND="playerctl --all-players play-pause"
-#export XSECURELOCK_KEY_XF86AudioNext_COMMAND="playerctl --all-players next"
