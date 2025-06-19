@@ -20,8 +20,6 @@ fi
 
 # Run X client utilities
 if [ ! -t 0 ] ; then
-    # Set root background color
-    xsetroot -solid "#202a36" &
     # Load ~/.Xresources
     xrdb ~/.Xresources &
     # Run xssproxy
