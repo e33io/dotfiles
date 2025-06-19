@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# =========================================
+# Wrapper to run around LightDM GTK Greeter
+# =========================================
+
+# Set HiDPI scaling
+export GDK_SCALE=2
+
+# Run greeter
+exec $@
