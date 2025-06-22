@@ -1,6 +1,6 @@
 # dotfiles
 
-custom Linux configuration files
+linux configuration files
 
 ### Notes
 - configs are optimized for use with the [i3](https://i3wm.org) window manager
