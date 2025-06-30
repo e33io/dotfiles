@@ -1,3 +1,3 @@
 #!/bin/bash
 
-i3lock -c 252525 && systemctl suspend
+i3lock -c 202a36 && systemctl suspend

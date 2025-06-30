@@ -4,7 +4,7 @@
 exec --no-startup-id dex --autostart --environment i3
 
 # Start xss-lock and set dpms time to trigger xss-lock
-exec --no-startup-id xss-lock -l -- i3lock -n -c 252525
+exec --no-startup-id xss-lock -l -- i3lock -n -c 202a36
 exec --no-startup-id sleep 1 && xset dpms 300 300 300
 
 # Set xrandr scaling variables (percentage)
