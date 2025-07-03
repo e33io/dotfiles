@@ -57,7 +57,7 @@ alias poweroff='systemctl poweroff'
 alias wifi='nmtui connect'
 
 # Remove list of recently used files
-alias remove-recent='rm -Rf ~/.local/share/recently-used.xbel'
+alias remove-recent='rm -rf ~/.local/share/recently-used.xbel'
 
 # Strip exif metadata from images, usage: strip-images path-to-file-or-directory
 alias strip-images='exiftool -overwrite_original -recurse -all= -TagsFromFile @ -ColorSpaceTags'
