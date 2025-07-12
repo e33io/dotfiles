@@ -1,4 +1,5 @@
 {
+    "colorcolumn": 120,
     "colorscheme": "monokai-mod",
     "diffgutter": true,
     "hlsearch": true,
