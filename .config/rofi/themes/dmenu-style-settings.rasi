@@ -8,6 +8,9 @@ configuration {
     disable-history: true;
     window-format: "[ws{w}] {n}";
     show-icons: true;
+    hover-select: true;
+    me-select-entry: "";
+    me-accept-entry: "MousePrimary";
 }
 window {
     anchor:   north;
