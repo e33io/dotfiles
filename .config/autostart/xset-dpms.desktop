@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=xset-dpms
+Comment=Set dpms timeout to trigger xss-lock
+Exec=sh -c "sleep 1; xset dpms 300 300 300"
+StartupNotify=false
+Terminal=false
+NoDisplay=true
