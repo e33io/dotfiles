@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=dunst-notifications
-Comment=Start dunst for notifications
-Exec=dunst
-StartupNotify=false
-Terminal=false
-NoDisplay=true
