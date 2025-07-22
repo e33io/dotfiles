@@ -146,6 +146,8 @@ bar {
     tray_padding 0
     workspace_min_width 20
     separator_symbol "|"
+    bindsym button4 nop
+    bindsym button5 nop
     status_command py3status -c ~/.config/i3/i3status.conf
     colors {
         # i3bar colors
