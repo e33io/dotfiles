@@ -136,49 +136,6 @@ bindsym ctrl+Right exec --no-startup-id playerctl --all-players next
 # Send notication of music that's now playing
 bindsym $mod+m  exec --no-startup-id ~/.local/bin/now-playing.sh
 
-# Set font for i3bar and window titlebars
-font pango:monospace 8.5
-
-# Start i3bar (workspace bar including i3status with py3status)
-bar {
-    position top
-    padding -1px 4px 0 0
-    tray_padding 0
-    workspace_min_width 20
-    separator_symbol "|"
-    bindsym button4 nop
-    bindsym button5 nop
-    status_command py3status -c ~/.config/i3/i3status.conf
-    colors {
-        # i3bar colors
-        background #1e1e1e
-        statusline #eeeeee
-        separator  #1c6dcf
-        #                  border  bckgrd  text
-        focused_workspace  #1c6dcf #1c6dcf #ffffff
-        active_workspace   #535353 #535353 #eeeeee
-        inactive_workspace #1e1e1e #1e1e1e #eeeeee
-        urgent_workspace   #a80e15 #a80e15 #ffffff
-        binding_mode       #6f3c95 #6f3c95 #ffffff
-    }
-}
-
-# i3 window colors      border  bckgrd  text    indictr child_border
-client.focused          #1c6dcf #1c6dcf #ffffff #438de6 #1c6dcf
-client.focused_inactive #535353 #1e1e1e #cccccc #6e6e6e #535353
-client.unfocused        #535353 #1e1e1e #cccccc #6e6e6e #535353
-client.urgent           #a80e15 #a80e15 #ffffff #dc121b #a80e15
-client.placeholder      #1e1e1e #1e1e1e #eeeeee #1e1e1e #1e1e1e
-client.background       #7f7f7f
-
-# Set border sizes and eliminate titlebars for tiled windows
-default_border pixel 2
-default_floating_border pixel 2
-for_window [all] border pixel 2
-
-# Set window gaps
-gaps inner 8
-
 # Launch rofi (program launcher)
 bindsym $mod+d exec --no-startup-id rofi -show drun
 
@@ -213,3 +170,24 @@ for_window [title="Kvantum Manager"] floating enable, resize set 1600 1600, move
 for_window [title="Write: .* Thunderbird"] floating enable, resize set 1920 1920, move position center
 for_window [window_role="GtkFileChooserDialog"] floating enable, resize set 1728 1188, move position center
 for_window [window_role="pop-up"] floating enable
+
+# Set font for window titlebars
+font pango:monospace 8.5
+
+# i3 window colors      border  bckgrd  text    indictr child_border
+client.focused          #1c6dcf #1c6dcf #ffffff #438de6 #1c6dcf
+client.focused_inactive #535353 #1e1e1e #cccccc #6e6e6e #535353
+client.unfocused        #535353 #1e1e1e #cccccc #6e6e6e #535353
+client.urgent           #a80e15 #a80e15 #ffffff #dc121b #a80e15
+client.placeholder      #1e1e1e #1e1e1e #eeeeee #1e1e1e #1e1e1e
+client.background       #7f7f7f
+
+# Set border sizes and eliminate titlebars for tiled windows
+default_border pixel 2
+default_floating_border pixel 2
+for_window [all] border pixel 2
+
+# Set top gap for polybar
+gaps top 21
+# Set window gaps
+gaps inner 8
