@@ -15,8 +15,8 @@ configuration {
 window {
     background-color: @background;
     border:           4px;
-    padding:          0.2em;
-    width:            40ch;
+    padding:          0.25em;
+    width:            42ch;
 }
 mainbox {
     border:  0;
@@ -25,7 +25,7 @@ mainbox {
 message {
     border:       2px 0 0;
     border-color: @separatorcolor;
-    padding:      0.4em;
+    padding:      0.5em;
 }
 textbox {
     text-color: @foreground;
@@ -41,16 +41,16 @@ listview {
 }
 element {
     border:  0;
-    padding: 0 0.3em;
+    padding: 0 0.25em;
 }
 element-icon {
     background-color: inherit;
-    size:             1.27em;
+    size:             1.6em;
 }
 element-text {
     background-color: inherit;
     text-color:       inherit;
-    padding:          0.4em;
+    padding:          0.5em;
 }
 element.normal.normal {
     background-color: @normal-background;
@@ -103,7 +103,7 @@ button.selected {
 inputbar {
     spacing:    0;
     text-color: @normal-foreground;
-    padding:    0.4em;
+    padding:    0.5em;
 }
 case-indicator {
     spacing:    0;
@@ -123,6 +123,6 @@ inputbar {
 textbox-prompt-colon {
     expand:     false;
     str:        ":";
-    margin:     0 0.2em 0 2px;
+    margin:     0 0.25em 0 2px;
     text-color: @normal-foreground;
 }

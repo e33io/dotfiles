@@ -50,5 +50,5 @@ element-text {
 }
 element-icon {
     background-color: inherit;
-    size:             48px;
+    size:             1.6em;
 }
