@@ -27,7 +27,7 @@ entry {
     padding:           1.5em 0 0.25em;
     border:            0 0 2px;
     border-color:      @dim-border;
-    placeholder:       "Search";
+    placeholder:       " Search";
     placeholder-color: @dim-text;
     font:              @entry-font;
 }
