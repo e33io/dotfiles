@@ -1,22 +1,110 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-  "logo": { 
-    "type": "none"
+  "logo": {
+    "padding": {
+      "top": 1,
+      "left": 1,
+      "right": 2
+    }
+  },
+  "display": {
+    "separator": "  "
   },
   "modules": [
-    "separator",
-    "os",
-    "host",
-    "kernel",
-    "packages",
-    "shell",
-    "uptime",
-    "de",
-    "wm",
-    "terminal",
-    "cpu",
-    "gpu",
-    "memory",
-    "separator"
+    // System Information
+    {
+      "type": "custom",
+      "format": "{#separator}│  {#italic_magenta}System Information {#separator}───────────────────────────────────────"
+    },
+    {
+      "type": "os",
+      "key": "{#separator}│  {#cyan}OS"
+    },
+    {
+      "type": "host",
+      "key": "{#separator}│  {#cyan}Host"
+    },
+    {
+      "type": "kernel",
+      "key": "{#separator}│  {#cyan}Kernel"
+    },
+    {
+      "type": "packages",
+      "key": "{#separator}│  {#cyan}Packages"
+    },
+    {
+      "type": "uptime",
+      "key": "{#separator}│  {#cyan}Uptime"
+    },
+    {
+      "type": "custom",
+      "format": "{#separator}│"
+    },
+    // Desktop Environment
+    {
+      "type": "custom",
+      "format": "{#separator}│  {#italic_magenta}Desktop Environment {#separator}──────────────────────────────────────"
+    },
+    {
+      "type": "de",
+      "key": "{#separator}│  {#cyan}DE"
+    },
+    {
+      "type": "wm",
+      "key": "{#separator}│  {#cyan}WM"
+    },
+    {
+      "type": "shell",
+      "key": "{#separator}│  {#cyan}Shell"
+    },
+    {
+      "type": "terminal",
+      "key": "{#separator}│  {#cyan}Terminal"
+    },
+    {
+      "type": "terminalfont",
+      "key": "{#separator}│  {#cyan}Terminal Font"
+    },
+    {
+      "type": "custom",
+      "format": "{#separator}│"
+    },
+    // Hardware Information
+    {
+      "type": "custom",
+      "format": "{#separator}│  {#italic_magenta}Hardware Information {#separator}─────────────────────────────────────"
+    },
+    {
+      "type": "cpu",
+      "key": "{#separator}│  {#cyan}CPU"
+    },
+    {
+      "type": "gpu",
+      "key": "{#separator}│  {#cyan}GPU"
+    },
+    {
+      "type": "memory",
+      "key": "{#separator}│  {#cyan}Memory"
+    },
+    {
+      "type": "disk",
+      "key": "{#separator}│  {#cyan}Disk (/)",
+      "folders": "/"
+    },
+    {
+      "type": "custom",
+      "format": "{#separator}│"
+    },
+    // Terminal Colors
+    {
+      "type": "colors",
+      "key": "{#separator}│",
+      "symbol": "circle"
+    },
+    // Empty Line
+    {
+      "type": "custom",
+      "format": " "
+    }
   ]
 }
