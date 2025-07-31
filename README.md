@@ -17,4 +17,4 @@ linux configuration files
 - view my documentation and notes [reference-wiki](https://github.com/e33io/reference-wiki) repo
 
 ### License
-[BSD Zero Clause License](https://github.com/e33io/dotfiles/blob/main/LICENSE)
+[The Unlicense](https://github.com/e33io/dotfiles/blob/main/LICENSE)
