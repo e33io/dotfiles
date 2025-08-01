@@ -19,11 +19,6 @@ menubar {
 .view:not(.sourceview):backdrop {
 	color: @theme_fg_color;
 }
-.view:selected {
-	color: @theme_selected_fg_color;
-	outline-style: dashed;
-	outline-width: 1px;
-}
 tooltip {
 	border-radius: 0;
 	border: none;
