@@ -1,5 +1,5 @@
 /*********************************************
- * Rofi Panel-Yaru-Dark-Sage Theme
+ * Rofi Panel-Yaru-Orange-Dark Theme
  ********************************************/
 
 /* theme settings */
@@ -8,10 +8,10 @@
 /* theme colors and entry font */
 * {
     background-color:    #1e1e1e;
-    selected-background: #657b69;
+    selected-background: #e95420;
     text-color:          #eeeeee;
     selected-text-color: #ffffff;
-    border-color:        #728c77;
+    border-color:        #ed744a;
     dim-text:            rgba(255,255,255,0.25);
     dim-border:          rgba(255,255,255,0.5);
     entry-font:          "sans-serif 10";

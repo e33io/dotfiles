@@ -1,5 +1,5 @@
 /*********************************************
- * Rofi Dmenu-Yaru-Dark-Green Theme
+ * Rofi Dmenu-Yaru-Orange-Dark Theme
  ********************************************/
 
 /* theme settings */
@@ -8,7 +8,7 @@
 /* theme colors */
 * {
     background-color:    #1e1e1e;
-    selected-background: #03875b;
+    selected-background: #e95420;
     text-color:          #eeeeee;
     selected-text-color: #ffffff;
 }

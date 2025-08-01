@@ -1,5 +1,5 @@
 /*******************************************************
- * Rofi Floating-Yaru-Dark-Orange Theme
+ * Rofi Floating-Yaru-Blue-Dark Theme
  ******************************************************/
 
 /* theme settings */
@@ -20,8 +20,8 @@
     background:                  #202020;
     alternate-normal-foreground: #eeeeee;
     normal-background:           #202020;
-    selected-normal-background:  #e95420;
-    border-color:                #ee7c52;
+    selected-normal-background:  #0073e5;
+    border-color:                #148aff;
     separatorcolor:              #434343;
     urgent-background:           #202020;
     selected-urgent-background:  #a60e15;
@@ -29,5 +29,5 @@
     background-color:            #202020;
     alternate-active-foreground: #eeeeee;
     active-background:           #202020;
-    selected-active-background:  #e95420;
+    selected-active-background:  #0073e5;
 }
