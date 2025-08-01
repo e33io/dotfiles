@@ -16,7 +16,7 @@ menubar {
 	border-bottom: 1px solid @unfocused_borders;
 	box-shadow: none;
 }
-.view:not(.sourceview) {
+.view:not(.sourceview):backdrop {
 	color: @theme_fg_color;
 }
 .view:selected {
