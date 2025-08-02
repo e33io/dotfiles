@@ -2,7 +2,7 @@
 **** GTK styles *********************************
 ************************************************/
 
-/* Terminal styles */
+/*** Terminal styles ***************************/
 VteTerminal,
 vte-terminal {
 	padding: 0.7em;
