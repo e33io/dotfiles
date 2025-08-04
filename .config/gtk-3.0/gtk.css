@@ -24,3 +24,6 @@ tooltip {
 	border: none;
 	box-shadow: none;
 }
+entry {
+	min-height: 1.7em;
+}
