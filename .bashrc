@@ -26,7 +26,7 @@ export EDITOR="micro"
 export VISUAL="micro"
 
 # Set command prompt
-PS1='\[\e[02;37m\][\[\e[m\]\[\e[01;34m\]\w\[\e[m\]\[\e[02;37m\]]\[\e[m\]\[\e[01;32m\]$\[\e[m\] '
+PS1='\[\e[01;34m\]\w/\[\e[m\]\[\e[01;32m\]\$\[\e[m\] '
 
 # Set terminal title
 PS1="\[\e]0;\w\a\]$PS1"
