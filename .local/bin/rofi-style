@@ -1,0 +1,29 @@
+#!/bin/bash
+
+while true; do
+    echo "################################################################"
+    echo "Select and set Rofi style"
+    echo "################################################################"
+    echo ""
+    printf "  0) Keep current style\n"
+    printf "  1) Dmenu\n"
+    printf "  2) Floating\n"
+    printf "  3) Panel\n"
+    echo ""
+
+    read -p "Which style do you want to use? " n
+    case $n in
+        0) echo "You chose to keep current style";
+           exit 1;;
+        1) echo "You chose Dmenu style";
+           sed -i -E 's/Floating|Panel/Dmenu/' $HOME/.config/rofi/config.rasi;
+           break;;
+        2) echo "You chose Floating style";
+           sed -i -E 's/Dmenu|Panel/Floating/' $HOME/.config/rofi/config.rasi;
+           break;;
+        3) echo "You chose Panel style";
+           sed -i -E 's/Dmenu|Floating/Panel/' $HOME/.config/rofi/config.rasi;
+           break;;
+        *) echo "Invalid selection, please enter a number from the list.";;
+    esac
+done
