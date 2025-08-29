@@ -8,9 +8,9 @@ while true; do
     echo "################################################################"
     echo ""
     printf "  0) Keep current style\n"
-    printf "  1) Dmenu\n"
-    printf "  2) Floating\n"
-    printf "  3) Panel\n"
+    printf "  1) Dmenu style (top side of screen)\n"
+    printf "  2) Floating style (center of screen)\n"
+    printf "  3) Panel style (left side of screen)\n"
     echo ""
 
     read -p "Which style do you want to use? " n
