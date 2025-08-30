@@ -1,0 +1,14 @@
+/*********************************************
+ * Rofi Dmenu-Yaru-Brown-Dark Theme
+ ********************************************/
+
+/* theme settings */
+@import "~/.config/rofi/themes/dmenu-style-settings.rasi"
+
+/* theme colors */
+* {
+    background-color:    #1e1e1e;
+    selected-background: #8c6c47;
+    text-color:          #eeeeee;
+    selected-text-color: #ffffff;
+}
