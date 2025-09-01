@@ -7,8 +7,8 @@ URL: https://github.com/e33io/dotfiles/blob/main/usr/share/gtksourceview-4/langu
 
 <language id="generic-config" name="Generic Config" version="2.0" _section="Other">
   <metadata>
-    <property name="mimetypes">text/conf;text/config;text/cfg;text/list;text/micro;text/rasi;text/rc;text/dunstrc</property>
-    <property name="globs">conf;config;*.conf;*.config;*.cfg;*.list;*.micro;*.rasi;rc;dunstrc</property>
+    <property name="mimetypes">text/conf;text/config;text/cfg;text/cwmrc;text/list;text/micro;text/rasi;text/rc;text/dunstrc</property>
+    <property name="globs">conf;config;*.conf;*.config;*.cfg;*.cwmrc;*.list;*.micro;*.rasi;rc;dunstrc</property>
     <property name="line-comment-start">#</property>
   </metadata>
 
