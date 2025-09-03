@@ -1,11 +1,5 @@
 [Desktop Entry]
-Name=UXTerm
-GenericName=Terminal
-Comment=XTerm wrapper
-Terminal=false
-Exec=uxterm
-Icon=xterm
 Type=Application
-Categories=System;TerminalEmulator;
-StartupWMClass=UXTerm
+Name=NoDisplay
+Exec=true
 NoDisplay=true
