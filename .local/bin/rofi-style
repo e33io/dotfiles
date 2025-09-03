@@ -5,12 +5,12 @@ while true; do
     echo "========================================================================"
     echo "Select and set Rofi style"
     echo "========================================================================"
-    echo ""
+    echo
     printf "  0) Keep current style\n"
     printf "  1) Dmenu style (top side of screen)\n"
     printf "  2) Floating style (center of screen)\n"
     printf "  3) Panel style (left side of screen)\n"
-    echo ""
+    echo
 
     read -p "Which style do you want to use? " n
     case $n in
