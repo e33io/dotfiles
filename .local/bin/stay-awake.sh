@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # =============================================================================
 # Use "Stay Awake ON" to disable screen blanking and locking (like Caffeine)
