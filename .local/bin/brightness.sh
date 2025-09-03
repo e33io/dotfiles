@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # =============================================================================
 # Change display brightness with brightnessctl and send dunst notification
