@@ -47,10 +47,10 @@ bindsym $mod+minus gaps inner all minus 4
 # Resize floating window, proportionally: $mod+Shift+button3 (right mouse button) and drag
 floating_modifier $mod
 
-# Toggle tiling / floating mode for focused window
+# Toggle tiling/floating mode for focused window
 bindsym $mod+Shift+space floating toggle, resize set 1728 1188, move position center
 
-# Change focus between tiling / floating windows
+# Change focus between tiling/floating windows
 bindsym $mod+space focus mode_toggle
 
 # Focus the parent container
@@ -71,7 +71,7 @@ bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
-# Switch to next / prev workspace
+# Switch to next/previous workspace
 bindsym ctrl+Mod1+Right workspace next
 bindsym ctrl+Mod1+Left workspace prev
 
@@ -99,20 +99,20 @@ bindsym $mod+Shift+q kill
 # Reload the i3 configuration file
 bindsym $mod+ctrl+r reload
 
-# Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+# Restart i3 inplace (preserves your layout/session)
 bindsym $mod+Shift+r restart
 
 # Launch rofi power menu (lock, logout, reboot, shutdown)
-bindsym $mod+p exec --no-startup-id ~/.local/bin/rofi-power.sh
+bindsym $mod+p exec --no-startup-id rofi-power.sh
 
 # Lock screen (session) with loginctl (to activate xss-lock)
 bindsym $mod+x exec --no-startup-id loginctl lock-session
 
 # Disable dpms to keep session awake (like Caffeine)
-bindsym $mod+ctrl+equal exec --no-startup-id ~/.local/bin/stay-awake.sh on
+bindsym $mod+ctrl+equal exec --no-startup-id stay-awake.sh on
 
 # Re-enable dpms to resume screen blanking and locking
-bindsym $mod+ctrl+minus exec --no-startup-id ~/.local/bin/stay-awake.sh off
+bindsym $mod+ctrl+minus exec --no-startup-id stay-awake.sh off
 
 # Volume and mic controls (using pactl)
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
@@ -121,8 +121,8 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 # Monitor display brightness controls
-bindsym XF86MonBrightnessDown exec --no-startup-id ~/.local/bin/brightness.sh down
-bindsym XF86MonBrightnessUp exec --no-startup-id ~/.local/bin/brightness.sh up
+bindsym XF86MonBrightnessDown exec --no-startup-id brightness.sh down
+bindsym XF86MonBrightnessUp exec --no-startup-id brightness.sh up
 
 # Media player controls (using playerctl)
 bindsym XF86AudioPrev exec --no-startup-id playerctl --all-players previous
@@ -133,7 +133,7 @@ bindsym ctrl+Down exec --no-startup-id playerctl --all-players play-pause
 bindsym ctrl+Right exec --no-startup-id playerctl --all-players next
 
 # Send notication of music that's now playing
-bindsym $mod+m  exec --no-startup-id ~/.local/bin/now-playing.sh
+bindsym $mod+m  exec --no-startup-id now-playing.sh
 
 # Launch rofi (program launcher)
 bindsym $mod+d exec --no-startup-id rofi -show drun
@@ -142,17 +142,17 @@ bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+Return exec --no-startup-id kitty
 bindsym $mod+Shift+Return exec --no-startup-id thunar
 bindsym $mod+b exec --no-startup-id GDK_SCALE=1 brave-browser
-bindsym $mod+t exec --no-startup-id /opt/sublime_text/sublime_text
-bindsym $mod+Shift+t exec --no-startup-id /opt/sublime_text/sublime_text --launch-or-new-window
-bindsym $mod+g exec --no-startup-id /opt/sublime_merge/sublime_merge
+bindsym $mod+t exec --no-startup-id subl
+bindsym $mod+Shift+t exec --no-startup-id subl --launch-or-new-window
+bindsym $mod+g exec --no-startup-id smerge
 bindsym $mod+f exec --no-startup-id filezilla
 bindsym $mod+i exec --no-startup-id gimp
 bindsym $mod+c exec --no-startup-id GDK_SCALE=1 signal-desktop
 
-# Save fullscreen, active window, or selected area screenshots (using scrot)
-bindsym Print exec --no-startup-id ~/.local/bin/screenshot.sh fullscreen
-bindsym $mod+Print exec --no-startup-id ~/.local/bin/screenshot.sh window
-bindsym Shift+Print exec --no-startup-id ~/.local/bin/screenshot.sh selection
+# Save fullscreen, active window, or selected area screenshots
+bindsym Print exec --no-startup-id screenshot.sh fullscreen
+bindsym $mod+Print exec --no-startup-id screenshot.sh window
+bindsym Shift+Print exec --no-startup-id screenshot.sh selection
 
 # Set font for window titlebars
 font pango:monospace 8.5
