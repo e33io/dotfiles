@@ -4,7 +4,7 @@ filetype: config
 # URL: https://github.com/e33io/dotfiles/blob/main/.config/micro/syntax/generic-config.yaml
 
 detect:
-    filename: "\\.(conf|config|cwmrc|gtkrc.*|micro|rasi)$|/(conf|config|dunstrc|gtkrc.*|rc|sxhkdrc|sources\\.list)$"
+    filename: "\\.(conf|config|gtkrc.*|micro|rasi)$|/(conf|config|dunstrc|gtkrc.*|rc|sxhkdrc|sources\\.list)$"
 
 rules:
     # configuration commands
