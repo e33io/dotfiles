@@ -1,0 +1,14 @@
+/*********************************************
+ * Rofi Dmenu-Mint-Y-Light-Green Theme
+ ********************************************/
+
+/* theme settings */
+@import "~/.config/rofi/themes/dmenu-style-settings.rasi"
+
+/* theme colors */
+* {
+    background-color:    #f5f5f5;
+    selected-background: #35a854;
+    text-color:          #303030;
+    selected-text-color: #ffffff;
+}

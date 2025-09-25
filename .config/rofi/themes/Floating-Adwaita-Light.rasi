@@ -21,7 +21,7 @@
     alternate-normal-foreground: #2e3436;
     normal-background:           #f6f5f4;
     selected-normal-background:  #3584e4;
-    border-color:                #5b5249;
+    border-color:                #1c6ed1;
     separatorcolor:              #bfb8b1;
     urgent-background:           #f6f5f4;
     selected-urgent-background:  #aa0e15;
