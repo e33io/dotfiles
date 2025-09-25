@@ -8,17 +8,17 @@
 /* theme colors */
 * {
     selected-normal-foreground:  #ffffff;
-    foreground:                  #303030;
-    normal-foreground:           #303030;
+    foreground:                  #222222;
+    normal-foreground:           #222222;
     alternate-normal-background: #e3e3e3;
     selected-urgent-foreground:  #ffffff;
     urgent-foreground:           #ec1d27;
     alternate-urgent-background: #e3e3e3;
-    active-foreground:           #303030;
+    active-foreground:           #222222;
     selected-active-foreground:  #ffffff;
     alternate-active-background: #e3e3e3;
     background:                  #f7f7f7;
-    alternate-normal-foreground: #303030;
+    alternate-normal-foreground: #222222;
     normal-background:           #f7f7f7;
     selected-normal-background:  #e95420;
     border-color:                #c94314;
@@ -27,7 +27,7 @@
     selected-urgent-background:  #aa0e15;
     alternate-urgent-foreground: #ec1d27;
     background-color:            #f7f7f7;
-    alternate-active-foreground: #303030;
+    alternate-active-foreground: #222222;
     active-background:           #f7f7f7;
     selected-active-background:  #e95420;
 }

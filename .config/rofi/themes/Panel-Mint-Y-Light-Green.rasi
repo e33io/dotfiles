@@ -9,7 +9,7 @@
 * {
     background-color:    #f5f5f5;
     selected-background: #35a854;
-    text-color:          #303030;
+    text-color:          #222222;
     selected-text-color: #ffffff;
     border-color:        #2f944a;
     dim-text:            rgba(0,0,0,0.25);
