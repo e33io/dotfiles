@@ -8,10 +8,10 @@
 /* theme colors and entry font */
 * {
     background-color:    #1e1e1e;
-    selected-background: #1c6dcf;
+    selected-background: #15539e;
     text-color:          #eeeeee;
-    selected-text-color: #ffffff;
-    border-color:        #2b7ee2;
+    selected-text-color: #f4f4f4;
+    border-color:        #1961b8;
     dim-text:            rgba(255,255,255,0.25);
     dim-border:          rgba(255,255,255,0.5);
     entry-font:          "sans-serif 10";

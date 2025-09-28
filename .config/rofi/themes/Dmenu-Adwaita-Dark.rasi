@@ -8,7 +8,7 @@
 /* theme colors */
 * {
     background-color:    #1e1e1e;
-    selected-background: #1c6dcf;
+    selected-background: #15539e;
     text-color:          #eeeeee;
-    selected-text-color: #ffffff;
+    selected-text-color: #f4f4f4;
 }
