@@ -7,15 +7,15 @@
 
 /* theme colors */
 * {
-    selected-normal-foreground:  #f4f4f4;
+    selected-normal-foreground:  #ffffff;
     foreground:                  #eeeeee;
     normal-foreground:           #eeeeee;
     alternate-normal-background: #252525;
-    selected-urgent-foreground:  #f4f4f4;
+    selected-urgent-foreground:  #ffffff;
     urgent-foreground:           #ed2f37;
     alternate-urgent-background: #252525;
     active-foreground:           #eeeeee;
-    selected-active-foreground:  #f4f4f4;
+    selected-active-foreground:  #ffffff;
     alternate-active-background: #252525;
     background:                  #1e1e1e;
     alternate-normal-foreground: #eeeeee;

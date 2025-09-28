@@ -10,5 +10,5 @@
     background-color:    #1e1e1e;
     selected-background: #15539e;
     text-color:          #eeeeee;
-    selected-text-color: #f4f4f4;
+    selected-text-color: #ffffff;
 }

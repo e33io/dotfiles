@@ -159,10 +159,10 @@ bindsym Shift+Print exec --no-startup-id screenshot.sh selection
 font pango:monospace 8.5
 
 # i3 window colors      border  bckgrd  text    indictr child_border
-client.focused          #15539e #15539e #f4f4f4 #1961be #15539e
+client.focused          #15539e #15539e #ffffff #1961be #15539e
 client.focused_inactive #535353 #1e1e1e #cccccc #6e6e6e #535353
 client.unfocused        #535353 #1e1e1e #cccccc #6e6e6e #535353
-client.urgent           #a80e15 #a80e15 #f4f4f4 #dc121b #a80e15
+client.urgent           #a80e15 #a80e15 #ffffff #dc121b #a80e15
 client.placeholder      #1e1e1e #1e1e1e #eeeeee #1e1e1e #1e1e1e
 client.background       #7f7f7f
 
