@@ -160,8 +160,8 @@ font pango:monospace 8.5
 
 # i3 window colors      border  bckgrd  text    indictr child_border
 client.focused          #15539e #15539e #ffffff #1961be #15539e
-client.focused_inactive #535353 #1e1e1e #cccccc #6e6e6e #535353
-client.unfocused        #535353 #1e1e1e #cccccc #6e6e6e #535353
+client.focused_inactive #4f4f4f #1e1e1e #cccccc #6a6a6a #4f4f4f
+client.unfocused        #4f4f4f #1e1e1e #cccccc #6a6a6a #4f4f4f
 client.urgent           #a80e15 #a80e15 #ffffff #dc121b #a80e15
 client.placeholder      #1e1e1e #1e1e1e #eeeeee #1e1e1e #1e1e1e
 client.background       #7f7f7f
