@@ -9,6 +9,6 @@
 * {
     background-color:    #f6f5f4;
     selected-background: #3584e4;
-    text-color:          #2e3436;
+    text-color:          #222222;
     selected-text-color: #ffffff;
 }
