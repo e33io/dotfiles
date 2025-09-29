@@ -1,5 +1,5 @@
 /*********************************************
- * Rofi Dmenu-Mint-Purple-Dark Theme
+ * Rofi Dmenu-Mint-Mod-Blue-Dark Theme
  ********************************************/
 
 /* theme settings */
@@ -8,7 +8,7 @@
 /* theme colors */
 * {
     background-color:    #1e1e1e;
-    selected-background: #8c5dd9;
+    selected-background: #0c75de;
     text-color:          #eeeeee;
     selected-text-color: #ffffff;
 }

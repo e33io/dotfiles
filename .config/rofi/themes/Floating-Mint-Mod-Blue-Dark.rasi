@@ -1,5 +1,5 @@
 /*******************************************************
- * Rofi Floating-Mint-Teal-Dark Theme
+ * Rofi Floating-Mint-Mod-Blue-Dark Theme
  ******************************************************/
 
 /* theme settings */
@@ -20,8 +20,8 @@
     background:                  #222222;
     alternate-normal-foreground: #eeeeee;
     normal-background:           #222222;
-    selected-normal-background:  #199ca8;
-    border-color:                #1db6c4;
+    selected-normal-background:  #0c75de;
+    border-color:                #258cf3;
     separatorcolor:              #454545;
     urgent-background:           #222222;
     selected-urgent-background:  #a60e15;
@@ -29,5 +29,5 @@
     background-color:            #222222;
     alternate-active-foreground: #eeeeee;
     active-background:           #222222;
-    selected-active-background:  #199ca8;
+    selected-active-background:  #0c75de;
 }

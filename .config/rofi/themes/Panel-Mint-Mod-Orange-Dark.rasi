@@ -1,5 +1,5 @@
 /*********************************************
- * Rofi Panel-Mint-Red-Dark Theme
+ * Rofi Panel-Mint-Mod-Orange-Dark Theme
  ********************************************/
 
 /* theme settings */
@@ -8,10 +8,10 @@
 /* theme colors and entry font */
 * {
     background-color:    #1e1e1e;
-    selected-background: #e82127;
+    selected-background: #ff7139;
     text-color:          #eeeeee;
     selected-text-color: #ffffff;
-    border-color:        #ec494e;
+    border-color:        #ff8757;
     dim-text:            rgba(255,255,255,0.25);
     dim-border:          rgba(255,255,255,0.5);
     entry-font:          "sans-serif 10";
