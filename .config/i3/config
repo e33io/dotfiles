@@ -146,7 +146,6 @@ bindsym $mod+t exec --no-startup-id mousepad
 #bindsym $mod+t exec --no-startup-id subl
 #bindsym $mod+Shift+t exec --no-startup-id subl --launch-or-new-window
 #bindsym $mod+g exec --no-startup-id smerge
-bindsym $mod+f exec --no-startup-id filezilla
 bindsym $mod+i exec --no-startup-id gimp
 bindsym $mod+c exec --no-startup-id GDK_SCALE=1 signal-desktop
 
