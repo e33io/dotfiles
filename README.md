@@ -11,7 +11,7 @@ linux configuration files
 - custom keybindings for [i3](https://github.com/e33io/reference-wiki/blob/main/keybindings/i3-keybindings.md)
 
 ### Links
-- view my optional dotfiles [opt-dots](https://github.com/e33io/extra) repo
+- view my extra dotfiles [extra](https://github.com/e33io/extra) repo
 - view my installation and utility [scripts](https://github.com/e33io/scripts) repo
 - view my collection of made and found [wallpapers](https://i.e33.io/wallpapers)
 - view my documentation and notes [reference-wiki](https://github.com/e33io/reference-wiki) repo
