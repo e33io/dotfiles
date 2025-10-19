@@ -105,7 +105,7 @@ bindsym $mod+Shift+r restart
 # Launch rofi power menu (lock, logout, reboot, shutdown)
 bindsym $mod+p exec --no-startup-id rofi-power.sh
 
-# Lock screen (session) with loginctl (to activate xss-lock)
+# Lock screen (session)
 bindsym $mod+x exec --no-startup-id loginctl lock-session
 
 # Disable dpms to keep session awake (like Caffeine)
