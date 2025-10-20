@@ -6,8 +6,8 @@
 
 [ $# -eq 0 ] && exit 0
 
-if [ "$2" = 'playing' ] ; then
-    while [ $# -ge 2 ] ; do
+if [ "$2" = 'playing' ]; then
+    while [ $# -ge 2 ]; do
         eval "_$1"='$2'
         shift
         shift
