@@ -64,3 +64,6 @@ alias strip-images='exiftool -overwrite_original -recurse -all= -TagsFromFile @ 
 
 # Create new note file with timestamped file name
 alias new-note='micro "$HOME/Documents/note_$(date +"%m-%d-%y_%H-%M-%S").txt"'
+
+# Set desktop background image, usage: set-bg path-to-image
+alias set-bg='feh --bg-fill'
